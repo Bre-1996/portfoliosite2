@@ -1,0 +1,254 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+body, html{
+	min-height: 100%;
+}
+body{
+	margin: 0;
+	background-image: url("../img/blog/Contact.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Inter', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	letter-spacing: 1px;
+}
+
+/*navbar section*/
+
+.navbar {
+	background-color: #1F1F1F;
+	color: #FF3A31;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 17px;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+}
+
+#logoNav{
+margin-right: 40px;	
+padding-right: 255px;
+}
+
+.logo{
+	height: 90px;
+}
+
+.nav-list{
+	list-style-type: none;
+}
+
+.nav-list .list-item{
+	display: inline-block;
+	padding: 20px 10px;
+}
+a {
+	color: #FF3A31;
+	text-decoration: none !important;
+}
+a:hover {
+	cursor: pointer;
+	color: #acacac;
+}
+
+.menu{
+	display: none;
+}
+
+.menu-line{
+	width: 40px;
+	height: 3.5px;
+	background-color: #FF3A31;
+	margin-bottom: 5px;
+}
+
+/*container section*/
+.contact-container{
+	padding-top: 170px;
+}
+
+/*contact section*/
+
+.section-wrap {
+  padding: 4px 10px;
+  width: 70%;
+  margin: auto;
+  height: auto;
+ background: #1f1f1f;
+}
+
+#contact .flex-grid{
+	padding: 50px 30px 80px;
+}
+
+#contact h3{
+	color: #FF3A31;
+	letter-spacing: 2px;
+}
+
+#contact h2{
+	font-size: 35px;
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  padding: 80px 0;
+  font-family: 'Inter', sans-serif;
+}
+.footer-text {
+  padding-right: 30%;
+  color: #fff;
+}                                                                                                                                                                            
+.footer-row {
+  display: inline-block;
+  width: 100%;
+}
+.footer-row input, .footer-row select, .footer-row textarea {
+  display: inline-block;
+  width: 45%;
+  margin: 15px 0 15px 0;
+  padding-left: 10px;
+  border-radius: 0px;
+  background: none;
+  height: 30px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
+.footer-row textarea {
+  width: 92%;
+  height: 100px;
+}
+.footer-row select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  box-sizing: content-box;
+  border-radius: 0;
+}
+.footer-row button {
+  font-size: 19px;
+  font-weight: 400;
+  background: none;
+  border: 2px solid #ff3a31;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  width: 22.5%;
+  border-radius: 50px;
+}
+.footer-row button:hover {
+  background: #ff3a31;
+  border: none;
+}
+#contact h2 {
+  color: #fff;
+}
+.footer-row select option {
+  background: #1f1f1f;
+}
+#contact .flex-grid {
+  display: flex;
+}
+#contact .col {
+  flex: 1;
+	line-height: 1.5;
+}
+#contact .col-2 {
+  flex: 2;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/******media queries*******/
+
+/*navbar*/
+@media all and (max-width: 1004px){
+	.navbar{
+		flex-direction: column;
+		position: static;
+	}
+	
+	.menu{
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 25px;
+	}
+	
+	.nav-list{
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+		display: none;
+	}
+	.nav-list .list-item{
+    display: block;
+	padding: 20px;
+    border-bottom: medium solid #FF3A31;
+	}
+	
+	#logoNav{
+		width: 100%;
+		
+	}
+	
+	.logo{
+	height: 55px;
+	margin-left: 10px;
+	margin-top: 15px;
+	}
+	
+	.active{
+	display: block;
+	}
+	
+}
+
+/*
+
+@media(max-width: 1342px){
+	.nav-list{
+	display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+
+/*contact section*/
+@media (max-width: 800px){
+	.contact-container{
+		padding-top: 100px;
+	}
+	
+	#contact .flex-grid{
+		margin-left: 50px;
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 800px){
+	#contact .flex-grid{
+		display: inline-block;
+		padding-left: 20px;
+	}
+	#contact .col{
+	padding-bottom: 20px;
+	}
+}
